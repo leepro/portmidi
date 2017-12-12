@@ -14,7 +14,8 @@
 
 package portmidi
 
-// #cgo LDFLAGS: -lportmidi
+// #cgo CFLAGS:  -I/usr/local/include -I/usr/include
+// #cgo LDFLAGS: -lportmidi -lporttime -L/usr/local/lib -L/usr/lib
 //
 // #include <stdlib.h>
 // #include <portmidi.h>
